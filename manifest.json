@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Ouvrir et fermer tous les tests du RGAA",
+    "version": "1.0.0",
+    "description": "Ouvrir et fermer tous les tests du RGAA dans la page des critères et tests du RGAA",
+    "permissions": ["scripting", "activeTab"],
+    "host_permissions": ["https://accessibilite.numerique.gouv.fr/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  

@@ -1,0 +1,3 @@
+# Cacher le dossier où le package de l'extension est généré
+web-ext-artifacts/
+.DS_Store
