@@ -18,7 +18,7 @@ function main() {
   button.innerHTML =
     'Ouvrir tous les tests <span class="fr-icon-arrow-down-s-line" aria-hidden="true"></span>';
   button.className = "fr-btn fr-btn--secondary";
-  button.style.marginLeft = "10px";
+  button.style.marginLeft = "20px";
 
   let areAccordionsExpanded = false;
 
