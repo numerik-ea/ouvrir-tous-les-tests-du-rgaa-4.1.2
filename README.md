@@ -46,4 +46,4 @@ NB : Pour windows, lancer `web-ext build -o` depuis cmd et non powershell
 #### Installer l'extension
 - Aller sur `about:debugging#/runtime/this-firefox`
 - Cliquer sur "Load Temporary Add-on"
-- Selectionner le fichier zip généré par web-ext contenant le code de l'extension dans le dossier `web-ext-artifacts`
+- Sélectionner le fichier zip généré par web-ext contenant le code de l'extension dans le dossier `web-ext-artifacts`
