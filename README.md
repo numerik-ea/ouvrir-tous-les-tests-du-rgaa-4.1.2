@@ -16,7 +16,7 @@ javascript: document.querySelectorAll('.fr-accordion__btn').forEach(element => e
 
 ### Instructions pour Firefox
 
-#### Installer web-ext pour créer le fichier zip contenant le code de l'extension
+#### 1. Installer web-ext pour créer le fichier zip contenant le code de l'extension
 
 ##### Mac
 ```bash
@@ -33,7 +33,7 @@ Etape 2
 npm install --global web-ext
 ```
 
-#### Créer le package de l'extension
+#### 2. Créer le package de l'extension
 A l'intérieur du dossier contenant le code de l'extension, lancer :
 ```bash
 web-ext build -o
@@ -43,7 +43,7 @@ web-ext build -o
 ```
 NB : Pour windows, lancer `web-ext build -o` depuis cmd et non powershell
 
-#### Installer l'extension
+#### 3. Installer l'extension
 - Aller sur `about:debugging#/runtime/this-firefox`
 - Cliquer sur "Load Temporary Add-on"
 - Sélectionner le fichier zip généré par web-ext contenant le code de l'extension dans le dossier `web-ext-artifacts`
