@@ -8,16 +8,6 @@ function main() {
     return;
   }
 
-  // Create the "toggle all accordions button" element
-  const button = document.createElement("button");
-  button.type = "button";
-  button.ariaExpanded = "false";
-  button.innerHTML =
-    'Ouvrir tous les tests <span class="fr-icon-arrow-down-s-line" aria-hidden="true"></span>';
-  button.className = "fr-btn fr-btn--secondary";
-
-  
-
   let areAccordionsExpanded = false;
 
   // Function to toggle aria-expanded
@@ -37,6 +27,26 @@ function main() {
     });
   }
 
+  // Create the "toggle all accordions button" element
+  const button = document.createElement("button");
+  button.type = "button";
+  button.ariaExpanded = "false";
+  button.className = "fr-btn fr-btn--secondary";
+
+  const toggleTextSpan = document.createElement("span");
+  toggleTextSpan.id = "toggle-text";
+  toggleTextSpan.innerText = "Ouvrir tous les tests";
+
+  const toggleIconSpan = document.createElement("span");
+  toggleIconSpan.id = "toggle-icon";
+  toggleIconSpan.className = "fr-icon-arrow-down-s-line";
+  toggleIconSpan.setAttribute("aria-hidden", "true");
+  toggleIconSpan.style.marginTop = "3px";
+  toggleIconSpan.style.transition = "transform 0.3s";
+
+  button.appendChild(toggleTextSpan);
+  button.appendChild(toggleIconSpan);
+
   // Add click event listener to toggle aria-expanded
   button.addEventListener("click", () => {
     if (areAccordionsExpanded) {
@@ -47,15 +57,17 @@ function main() {
     toggleAccordions();
 
     // Update aria-expanded
-    button.ariaExpanded = areAccordionsExpanded ? "false" : "true";
-
-    // Toggle state for the next click
-    areAccordionsExpanded = !areAccordionsExpanded;
+    button.ariaExpanded = "true";
 
     // Update button text based on current state
-    button.innerHTML = areAccordionsExpanded
-      ? 'Fermer tous les tests <span class="fr-icon-arrow-up-s-line" aria-hidden="true"></span>'
-      : 'Ouvrir tous les tests <span class="fr-icon-arrow-down-s-line" aria-hidden="true"></span>';
+    toggleTextSpan.innerText = 'Fermer tous les tests';
+
+    // Update button icon based on current state
+    toggleIconSpan.style.marginTop = "2px";
+    toggleIconSpan.style.transform = "rotate(-180deg)";
+
+    // Toggle state for the next click
+    areAccordionsExpanded = !areAccordionsExpanded;    
   });
 
   const div = document.createElement("div");
@@ -64,7 +76,7 @@ function main() {
   const newH1 = document.createElement("h1");
   newH1.textContent = "Critères et tests";
 
-  const mobileMediaQuery = window.matchMedia("(max-width: 503px)");
+  const mobileMediaQuery = window.matchMedia("(max-width: 508px)");
 
   function setElementsStyles() {
     if (mobileMediaQuery.matches) {
