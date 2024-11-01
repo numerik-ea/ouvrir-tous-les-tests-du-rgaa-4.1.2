@@ -50,6 +50,9 @@ function main() {
   // Add click event listener to toggle aria-expanded
   button.addEventListener("click", () => {
     if (areAccordionsExpanded) {
+        // If all accordions are expanded, reload the page
+        // Reloading the page is faster than toggling aria-expanded on each button
+        // Plus we stay at the top of the page after reload
         location.reload();
         return;
     }
