@@ -23,7 +23,7 @@ javascript:document.querySelectorAll('.fr-accordion__btn').forEach(element => el
 
 #### 1. Installer web-ext pour créer le fichier zip contenant le code de l'extension
 
-##### Mac
+##### Mac (homebrew doit être installé au préalable)
 ```bash
 brew install web-ext
 ```
