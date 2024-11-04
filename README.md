@@ -1,6 +1,6 @@
 # ouvrir-et-fermer-tous-les-tests-du-rgaa
 
-## Scripts à mettre en favori
+## Bookmarklets (marque-pages/favoris scriptés)
 ### Ouvrir tous les tests du RGAA
 ```javascript
 javascript:document.querySelectorAll('.fr-accordion__btn').forEach(element => element.setAttribute('aria-expanded', 'true'));
