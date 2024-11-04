@@ -17,7 +17,7 @@ javascript:document.querySelectorAll('.fr-accordion__btn').forEach(element => el
 - Aller sur `chrome://extensions`
 - Activer le mode développeur
 - Cliquer sur "Charger l'extension non empaquetée"
-- Choisir le dossier contenant le code de l'extension
+- Choisir le dossier dézippé contenant le code de l'extension
 
 ### Instructions pour Firefox
 
