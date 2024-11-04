@@ -12,6 +12,8 @@ javascript:document.querySelectorAll('.fr-accordion__btn').forEach(element => el
 
 ## Extension navigateur qui ajoute un bouton "Ouvrir/Fermer tous les tests" en haut de la page des critères et tests du RGAA
 
+<img width="407" alt="screenshot-bouton-ouvrir-les-tests-du-rgaa" src="https://github.com/user-attachments/assets/e1af28aa-9d4d-43a2-8e28-0ec6661f78fa">
+
 ### Installation de l'extension dans Chrome
 
 - Aller sur `chrome://extensions`
