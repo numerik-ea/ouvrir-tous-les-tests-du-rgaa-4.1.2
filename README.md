@@ -16,12 +16,22 @@ javascript:document.querySelectorAll('.fr-accordion__btn').forEach(element => el
 
 ### Installation de l'extension dans Chrome
 
+- [Télécharger l'extension zippée](https://github.com/florentroques/ouvrir-et-fermer-tous-les-tests-du-rgaa/releases/download/v1.0.0/ouvrir-et-fermer-tous-les-tests-du-rgaa-v1.0.0-chrome.zip)
+- Dézipper le fichier
 - Aller sur `chrome://extensions`
 - Activer le mode développeur
 - Cliquer sur "Charger l'extension non empaquetée"
 - Choisir le dossier dézippé contenant le code de l'extension
 
-### Instructions pour Firefox
+### Installation de l'extension dans Firefox
+- [Télécharger l'extension au format "zip compatible avec Firefox"](https://github.com/florentroques/ouvrir-et-fermer-tous-les-tests-du-rgaa/releases/download/v1.0.0/ouvrir_et_fermer_tous_les_tests_du_rgaa-1.0.0-firefox.zip)
+- Aller sur `about:debugging#/runtime/this-firefox`
+- Cliquer sur "Charger un module complémentaire temporaire…"
+- Sélectionner le fichier zip
+
+---
+
+### Méthode pour générer le fichier d'extension pour Firefox
 
 #### 1. Installer web-ext pour créer le fichier zip contenant le code de l'extension
 
@@ -48,9 +58,4 @@ web-ext build -o
 ```bash
 # -o permet d'écraser le fichier zip déjà existant
 ```
-NB : Pour windows, lancer `web-ext build -o` depuis cmd et non powershell
-
-#### 3. Installer l'extension
-- Aller sur `about:debugging#/runtime/this-firefox`
-- Cliquer sur "Charger un module complémentaire temporaire…"
-- Sélectionner le fichier zip généré par web-ext contenant le code de l'extension dans le dossier `web-ext-artifacts`
+NB : Pour Windows, lancer `web-ext build -o` depuis cmd et non powershell
