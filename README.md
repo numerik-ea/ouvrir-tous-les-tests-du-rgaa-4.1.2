@@ -1,4 +1,4 @@
-# ouvrir-et-fermer-les-tests-du-rgaa
+# ouvrir-et-fermer-tous-les-tests-du-rgaa
 
 ## Scripts à mettre en favori
 ### Ouvrir tous les tests du RGAA
