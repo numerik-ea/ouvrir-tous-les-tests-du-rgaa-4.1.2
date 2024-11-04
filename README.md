@@ -5,7 +5,7 @@
 ```javascript
 javascript:document.querySelectorAll('.fr-accordion__btn').forEach(element => element.setAttribute('aria-expanded', 'true'));
 ```
-### Fermer tous les tests du RGAA (recharger la page est plus rapide)
+### Fermer tous les tests du RGAA (note : recharger la page est plus rapide)
 ```javascript
 javascript:document.querySelectorAll('.fr-accordion__btn').forEach(element => element.setAttribute('aria-expanded', 'false'));
 ```
