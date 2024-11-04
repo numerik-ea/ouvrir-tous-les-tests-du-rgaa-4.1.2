@@ -1,8 +1,13 @@
-# toggle-all-rgaa-tests-button
+# ouvrir-et-fermer-les-tests-du-rgaa
 
-## Fonctionnalité sous forme de script en favori dans le navigateur qui ouvre tous les tests du RGAA
+## Scripts à mettre en favori
+### Ouvrir tous les tests du RGAA
 ```javascript
-javascript: document.querySelectorAll('.fr-accordion__btn').forEach(element => element.setAttribute('aria-expanded', 'true'));
+javascript:document.querySelectorAll('.fr-accordion__btn').forEach(element => element.setAttribute('aria-expanded', 'true'));
+```
+### Fermer tous les tests du RGAA (recharger la page est plus rapide)
+```javascript
+javascript:document.querySelectorAll('.fr-accordion__btn').forEach(element => element.setAttribute('aria-expanded', 'false'));
 ```
 
 ## Extension navigateur qui ajoute un bouton "Ouvrir/Fermer tous les tests" en haut de la page des critères et tests du RGAA
