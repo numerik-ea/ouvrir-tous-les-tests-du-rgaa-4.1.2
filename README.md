@@ -1,11 +1,10 @@
 # ouvrir-tous-les-tests-du-rgaa-4.1.2
 
-## Bookmarklets (marque-pages/favoris scriptés)
-### Ouvrir tous les tests du RGAA
+## Bookmarklet "Ouvrir tous les tests du RGAA 4.1.2"
 ```javascript
 javascript:document.querySelectorAll('.fr-accordion__btn').forEach(element => element.setAttribute('aria-expanded', 'true'));
 ```
-### Pour fermer tous les tests du RGAA : recharger la page
+(Pour fermer tous les tests du RGAA 4.1.2 : recharger la page)
 
 ## Extension navigateur qui ajoute un bouton "Ouvrir/Fermer tous les tests" en haut de la page des critères et tests du RGAA
 
