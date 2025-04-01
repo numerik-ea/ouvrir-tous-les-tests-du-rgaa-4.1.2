@@ -1,6 +1,7 @@
 # ouvrir-tous-les-tests-du-rgaa-4.1.2
 
 ## Bookmarklet "Ouvrir tous les tests du RGAA 4.1.2"
+OpenRGAA
 ```javascript
 javascript:document.querySelectorAll('.fr-accordion__btn').forEach(element => element.setAttribute('aria-expanded', 'true'));
 ```
